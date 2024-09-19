@@ -27,8 +27,7 @@ data_path = os.path.join(repo_path, 'data')
 output_folder = os.path.join(repo_path, 'results/without_yolo/')
 
 # process_images returns a dataframe containing the results
-without_yolo_results = process_images(
-    data_path, output_folder, highlighted_cars=True)
+without_yolo_results = process_images(data_path, output_folder, highlighted_cars=True)
 without_yolo_results.head(5)  # Show the results for the first 5 images
 
 
@@ -42,15 +41,13 @@ data_path = os.path.join(repo_path, 'data')
 output_folder = f'{repo_path}/results/{model}/'
 
 # process_images returns a dataframe containing the results
-yolov5n_results = process_images(
-    data_path, output_folder, highlighted_cars=True, model=model)
+yolov5n_results = process_images(data_path, output_folder, highlighted_cars=True, model=model)
 yolov5n_results.head(5)  # Show the results for the first 5 images
 
 
 model = 'yolov5s_fold_0'
 output_folder = f'{repo_path}/results/{model}/'
-yolov5s_results = process_images(
-    data_path, output_folder, highlighted_cars=True, model=model)
+yolov5s_results = process_images(data_path, output_folder, highlighted_cars=True, model=model)
 yolov5s_results.head()  # Show the results for the first 5 images
 
 
@@ -64,15 +61,13 @@ data_path = os.path.join(repo_path, 'data')
 output_folder = f'{repo_path}/results/{model}/'
 
 # process_images returns a dataframe containing the results
-yolov8n_results = process_images(
-    data_path, output_folder, highlighted_cars=True, model=model)
+yolov8n_results = process_images(data_path, output_folder, highlighted_cars=True, model=model)
 yolov8n_results.head()  # Show the results for the first 5 images
 
 
 model = 'yolov8s_fold_0'
 output_folder = f'{repo_path}/results/{model}/'
-yolov8s_results = process_images(
-    data_path, output_folder, highlighted_cars=True, model=model)
+yolov8s_results = process_images(data_path, output_folder, highlighted_cars=True, model=model)
 yolov8s_results.head()  # Show the results for the first 5 images
 
 
