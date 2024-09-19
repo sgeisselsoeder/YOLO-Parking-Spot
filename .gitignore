@@ -60,3 +60,7 @@ models/*l.pt
 runs
 videos
 internet_videos
+
+data
+results
+models
